@@ -1,38 +1,107 @@
-.App {
+@charset 'utf-8';
+* {
+  box-sizing: border-box;
+}
+li {
+  list-style: none;
+}
+
+#root {
+  width: 500px;
+  margin: 60px auto 0 auto;
+}
+.navbar {
+  font-size: 25px;
+  padding: 10px;
+  border-radius: 10px 10px 0 0;
+  background-color: blanchedalmond;
+  text-align: center;
+}
+.navbar__logo {
+  color: green;
+  margin-right: 10px;
+}
+.navbar__count {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  margin-left: 10px;
+  border-radius: 50%;
+  background-color: green;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container {
+  padding: 15px;
+  background-color: #fdf5e7;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.add__form {
+  margin-bottom: 15px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.add__input {
+  line-height: 25px;
+  margin-right: 10px;
+  padding: 3px 5px;
+  font-size: 18px;
+  vertical-align: middle;
+}
+.add__button,
+.btn__reset {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  line-height: 25px;
+  background-color: green;
   color: white;
+  font-size: 15px;
+  vertical-align: middle;
+  cursor: pointer;
+}
+.add__button:hover {
+  opacity: 0.9;
 }
 
-.App-link {
-  color: #61dafb;
+.habits {
+  margin: 0;
+  /* padding: 15px 0 15px 5px; */
+  padding-left: 0;
+}
+.habit {
+  margin-bottom: 20px;
+}
+.habit__name,
+.habit__count {
+  font-size: 25px;
+}
+.habit__count {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  margin-top: 3px;
+  margin-left: 5px;
+  border-radius: 50%;
+  background-color: #84b486;
+  text-align: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.habit__button:first-of-type {
+  margin-left: 20px;
+}
+.habit__button {
+  margin-left: 10px;
+  border: none;
+  padding: 0;
+  background-color: transparent;
+}
+.habit__button svg {
+  margin-top: 3px;
+  font-size: 30px;
+  color: #d79a1f;
+  cursor: pointer;
+}
+.habit__delete svg {
+  color: #7f0001;
 }
